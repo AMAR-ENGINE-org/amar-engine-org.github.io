@@ -34,9 +34,13 @@
                 <span class="nav-space"></span>
                 <a href="#core-concepts">Core Concepts</a>
                 <span class="nav-space"></span>
-                <a href="#api-reference">API Reference</a>
+                <a href="#components">Components</a>
                 <span class="nav-space"></span>
-                <a href="#developer-guide">Developer Guide</a>
+                <a href="#metaclass">Metaclass</a>
+                <span class="nav-space"></span>
+                <a href="#api">API</a>
+                <span class="nav-space"></span>
+                <a href="#developer">Developer</a>
                 <span class="nav-space"></span>
                 <div class="language-switch">
                     <button id="lang-en" class="lang-btn active">EN</button>
@@ -66,32 +70,15 @@
             <div class="about-content">
                 <h2>Overview</h2>
                 <p>AMAR Engine (AME) is a reality mapping and physical reconstruction system, not a traditional 3D rendering engine. It "forcefully" instantiates entities with physical authority in the digital dimension through resampling of high-dimensional spatial point clouds and integration of multimodal semantic injection.</p>
-                <h3>Core Mission</h3>
-                <p>PHYSICAL INSTANTIATION OF REALITY</p>
-                <h3>System Vision</h3>
-                <p>In AME's worldview, everything can be Instantiated, and physical laws are absolutely governed by the underlying engine AMAR GENIS. The AME system aims to create a digital ecosystem that can truly reflect and simulate the real world, where each entity has physical properties and behaviors highly consistent with the real world.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- System Components Section -->
-    <section id="components" class="components">
-        <div class="container">
-            <div class="content-container">
-                <h2>System Components</h2>
-            </div>
-            <div class="components-grid">
-                <div class="component-item">
-                    <h3>AME Scanner</h3>
-                    <p>Spatial skeleton capture with density collapse processing and OBB fitting, providing geometric constraints for entities. It serves as the executor of the 3DGS path.</p>
-                </div>
-                <div class="component-item">
-                    <h3>AMAR ENGINE</h3>
-                    <p>System core with Normalization Center (Admin), integrating metaclass, AEID, and skills systems. It acts as the system hub, collapsing data from three paths into a unique physical entity.</p>
-                </div>
-                <div class="component-item">
-                    <h3>AMAR GENIS</h3>
-                    <p>Physics engine and executor of physical laws, implementing physical instantiation and behavior simulation. It serves as the underlying physics engine and physical judge of the AME world.</p>
+                <div class="docs-grid">
+                    <div class="docs-item">
+                        <h3>Overview</h3>
+                        <p>System overview and core mission</p>
+                    </div>
+                    <div class="docs-item">
+                        <h3>Readme</h3>
+                        <p>Getting started guide</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,22 +90,14 @@
             <div class="content-container">
                 <h2>Architecture</h2>
             </div>
-            <div class="architecture-content">
-                <div class="architecture-item">
-                    <h3>Triple-Path Convergence</h3>
-                    <p>The AME system adopts a triple-path convergence architecture, with Admin as the hub, collapsing data from three heterogeneous paths into a single physical entity: 3DGS Path, Media Input Path, and LLM API Path.</p>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>Architecture</h3>
+                    <p>System architecture and design</p>
                 </div>
-                <div class="architecture-item">
-                    <h3>3DGS Path</h3>
-                    <p>Navigates 3D Gaussian splatting through density-weighted sampling algorithms to extract spatial truth, providing geometric constraints for entities.</p>
-                </div>
-                <div class="architecture-item">
-                    <h3>Media Input Path</h3>
-                    <p>Processes cross-spectrum images, temporal videos, and acoustic data to determine object surface material flow and acoustic impedance, providing sensory consistency for entities.</p>
-                </div>
-                <div class="architecture-item">
-                    <h3>LLM API Path</h3>
-                    <p>Converts natural language fragments into metaclass descriptions, injecting physical constants, and providing causality for entities.</p>
+                <div class="docs-item">
+                    <h3>Architecture (English)</h3>
+                    <p>System architecture in English</p>
                 </div>
             </div>
         </div>
@@ -130,75 +109,128 @@
             <div class="content-container">
                 <h2>Core Concepts</h2>
             </div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h3>Metaclass System</h3>
-                    <p>Genetic genes of the system, with evolutionary logic from concrete to abstract to self-consistent. Includes Root Metaclass (axioms of the physical world) and Standard Metaclass (entity templates with interaction potential).</p>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>Core Concepts</h3>
+                    <p>Fundamental concepts and principles</p>
                 </div>
-                <div class="feature-item">
-                    <h3>AEID System</h3>
-                    <p>Advanced Entity Identification system that uniquely identifies and tracks entities across different domains, ensuring consistent identification throughout the system.</p>
+                <div class="docs-item">
+                    <h3>Core Concepts (English)</h3>
+                    <p>Fundamental concepts in English</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Skills System</h3>
-                    <p>A modular system for adding and managing capabilities and behaviors to entities, allowing for flexible extension of entity functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <div class="content-container">
+                <h2>System Components</h2>
+            </div>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>AME Admin</h3>
+                    <p>Administration and normalization center</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Physical Handle Binding</h3>
-                    <p>Implements asynchronous coupling between the 3DGS visual layer and physical collision layer, supporting topological mutations and ensuring consistency between visual presentation and physical behavior.</p>
+                <div class="docs-item">
+                    <h3>AME Scanner</h3>
+                    <p>Spatial skeleton capture and processing</p>
+                </div>
+                <div class="docs-item">
+                    <h3>AME Scanner Integration</h3>
+                    <p>Integration guide for AME Scanner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metaclass System Section -->
+    <section id="metaclass" class="innovations">
+        <div class="container">
+            <div class="content-container">
+                <h2>Metaclass System</h2>
+            </div>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>Metaclass Standard</h3>
+                    <p>Metaclass system standard specification</p>
+                </div>
+                <div class="docs-item">
+                    <h3>Metaclass Schema</h3>
+                    <p>Metaclass schema definition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AEID System Section -->
+    <section id="aeid" class="scenarios">
+        <div class="container">
+            <div class="content-container">
+                <h2>AEID System</h2>
+            </div>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>AEID Convention</h3>
+                    <p>Advanced Entity Identification system convention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills System Section -->
+    <section id="skills" class="team">
+        <div class="container">
+            <div class="content-container">
+                <h2>Skills System</h2>
+            </div>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>Skills Specification</h3>
+                    <p>Skills system specification and implementation</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- API Reference Section -->
-    <section id="api-reference" class="innovations">
+    <section id="api" class="about">
         <div class="container">
-            <div class="content-container">
+            <div class="about-content">
                 <h2>API Reference</h2>
-            </div>
-            <div class="innovations-content">
-                <div class="innovation-item">
-                    <h3>Entities API</h3>
-                    <p><strong>POST /api/entities</strong>: Create entity with GSOutput + MediaData + SemanticData<br>
-                    <strong>GET /api/entities/{id}</strong>: Get entity information<br>
-                    <strong>PUT /api/entities/{id}</strong>: Update entity properties</p>
-                </div>
-                <div class="innovation-item">
-                    <h3>Metaclasses API</h3>
-                    <p><strong>GET /api/metaclasses</strong>: Get metaclass list<br>
-                    <strong>POST /api/metaclasses</strong>: Create new metaclass</p>
+                <div class="docs-grid">
+                    <div class="docs-item">
+                        <h3>API Reference (English)</h3>
+                        <p>Application Programming Interface documentation</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Developer Guide Section -->
-    <section id="developer-guide" class="scenarios">
+    <section id="developer" class="architecture">
         <div class="container">
             <div class="content-container">
                 <h2>Developer Guide</h2>
             </div>
-            <div class="scenarios-grid">
-                <div class="scenario-item">
-                    <h3>Getting Started</h3>
-                    <p>Learn how to set up and start using AMAR Engine, including installation, configuration, and basic usage.</p>
+            <div class="docs-grid">
+                <div class="docs-item">
+                    <h3>Developer Guide</h3>
+                    <p>Guide for developers working with AMAR Engine</p>
                 </div>
-                <div class="scenario-item">
-                    <h3>Metaclass Development</h3>
-                    <p>Guide to creating and extending metaclasses, including best practices and examples.</p>
+                <div class="docs-item">
+                    <h3>Developer Guide (English)</h3>
+                    <p>Developer guide in English</p>
                 </div>
-                <div class="scenario-item">
-                    <h3>Skills Implementation</h3>
-                    <p>Instructions for implementing custom skills and behaviors for entities.</p>
+                <div class="docs-item">
+                    <h3>Design System</h3>
+                    <p>Design system guidelines</p>
                 </div>
-                <div class="scenario-item">
-                    <h3>Integration Guide</h3>
-                    <p>How to integrate AMAR Engine with other systems and platforms.</p>
-                </div>
-                <div class="scenario-item">
-                    <h3>Performance Optimization</h3>
-                    <p>Tips and techniques for optimizing AMAR Engine performance.</p>
+                <div class="docs-item">
+                    <h3>Tahoe</h3>
+                    <p>Additional system documentation</p>
                 </div>
             </div>
         </div>
@@ -216,8 +248,10 @@
                     <a href="#overview">Overview</a>
                     <a href="#architecture">Architecture</a>
                     <a href="#core-concepts">Core Concepts</a>
-                    <a href="#api-reference">API Reference</a>
-                    <a href="#developer-guide">Developer Guide</a>
+                    <a href="#components">Components</a>
+                    <a href="#metaclass">Metaclass</a>
+                    <a href="#api">API</a>
+                    <a href="#developer">Developer</a>
                 </div>
                 <div class="footer-social">
                     <a href="#">GitHub</a>

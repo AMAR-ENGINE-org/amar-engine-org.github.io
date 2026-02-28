@@ -752,6 +752,48 @@ p {
   color: var(--primary-green);
 }
 
+/* Documentation Grid - SWISS STYLE */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.docs-item {
+  background-color: var(--white);
+  padding: var(--spacing-md);
+  border: 1px solid var(--black);
+  transition: var(--transition-fast);
+}
+
+.docs-item:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.docs-item h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.docs-item:hover h3 {
+  color: var(--white);
+}
+
+.docs-item p {
+  color: var(--dark-gray);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.docs-item:hover p {
+  color: var(--white);
+}
+
 /* Footer Section - SWISS STYLE */
 .footer {
   background: var(--black);
