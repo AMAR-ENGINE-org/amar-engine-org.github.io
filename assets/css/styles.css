@@ -242,7 +242,7 @@ p {
 }
 
 .logo {
-  grid-column: 3 / 5;
+  grid-column: 1 / 6;
 }
 
 .logo h1 {
@@ -254,11 +254,25 @@ p {
   letter-spacing: 0.1em;
 }
 
+/* Mobile menu button */
+.mobile-menu-btn {
+  grid-column: 12 / 13;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--black);
+  justify-self: end;
+}
+
+/* Navigation links */
 .nav-links {
-  grid-column: 7 / 11;
+  grid-column: 6 / 12;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: var(--spacing-md);
 }
 
 .nav-links a {
@@ -277,19 +291,12 @@ p {
   text-underline-offset: 4px;
 }
 
-/* Navigation spacing */
-.nav-space {
-  width: 16px;
-  display: inline-block;
-}
-
 /* 语言切换 - SWISS STYLE */
 .language-switch {
-  grid-column: 11 / 13;
+  margin-left: var(--spacing-md);
   display: flex;
   gap: var(--spacing-xs);
   align-items: center;
-  justify-content: flex-end;
 }
 
 .lang-btn {
@@ -897,22 +904,13 @@ p {
 }
 
 /* 响应式导航 */
-.mobile-menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--dark-gray);
-}
-
 @media (max-width: 1024px) {
   .nav-links {
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
   }
   
   .nav-links a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -930,17 +928,22 @@ p {
     flex-direction: column;
     align-items: center;
     padding: var(--spacing-lg) 0;
-    box-shadow: var(--shadow-md);
+    border-bottom: 2px solid var(--black);
     transform: translateY(-100%);
     opacity: 0;
     transition: var(--transition-normal);
     pointer-events: none;
+    z-index: 999;
   }
   
   .nav-links.active {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
+  }
+  
+  .nav-links a {
+    margin: var(--spacing-xs) 0;
   }
   
   .language-switch {
@@ -963,7 +966,7 @@ p {
   }
   
   /* Sections */
-  .about, .architecture, .features, .components, .innovations, .scenarios, .docs {
+  .about, .architecture, .features, .components, .innovations, .scenarios, .docs, .team {
     padding: 4rem 0;
   }
   
@@ -976,7 +979,9 @@ p {
   .features-grid,
   .components-grid,
   .innovations-content,
-  .scenarios-grid {
+  .scenarios-grid,
+  .team-grid,
+  .docs-grid {
     grid-template-columns: 1fr;
   }
   

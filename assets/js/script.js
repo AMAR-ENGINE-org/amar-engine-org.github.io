@@ -75,6 +75,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+            // Change icon based on menu state
+            const icon = mobileMenuBtn.querySelector('svg');
+            if (navLinks.classList.contains('active')) {
+                // Change to close icon
+                icon.innerHTML = '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>';
+            } else {
+                // Change back to menu icon
+                icon.innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+            }
         });
     }
     
@@ -84,8 +93,23 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             if (navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
+                // Change back to menu icon
+                const icon = mobileMenuBtn.querySelector('svg');
+                icon.innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
             }
         });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!mobileMenuBtn.contains(event.target) && !navLinks.contains(event.target)) {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                // Change back to menu icon
+                const icon = mobileMenuBtn.querySelector('svg');
+                icon.innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+            }
+        }
     });
 });
 
