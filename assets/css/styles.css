@@ -225,57 +225,57 @@ p {
   }
 }
 
-/* 导航栏样式 - SWISS STYLE */
-.navbar {
-  background: var(--white);
-  border-bottom: 2px solid var(--black);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: var(--spacing-sm) 0;
-}
-
-.navbar .container {
-  align-items: center;
-}
-
-.logo {
-  grid-column: 1 / 6;
-}
-
-.logo h1 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--black);
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-/* Mobile menu button */
+/* Mobile Menu Button - SWISS STYLE */
 .mobile-menu-btn {
-  grid-column: 12 / 13;
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: var(--border-radius);
+  padding: 12px;
   cursor: pointer;
-  color: var(--black);
-  justify-self: end;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-fast);
 }
 
-/* Navigation links */
+.mobile-menu-btn:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.mobile-menu-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Navigation Links - SWISS STYLE */
 .nav-links {
-  grid-column: 6 / 12;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: var(--spacing-md);
+  position: fixed;
+  bottom: 80px;
+  left: 24px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(-150%);
+  opacity: 0;
+  transition: var(--transition-normal);
+  pointer-events: none;
+  z-index: 999;
+  max-width: 280px;
+}
+
+.nav-links.active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
 }
 
 .nav-links a {
+  display: block;
   text-decoration: none;
   color: var(--black);
   font-weight: 500;
@@ -283,6 +283,7 @@ p {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-bottom: 16px;
 }
 
 .nav-links a:hover {
@@ -293,9 +294,11 @@ p {
 
 /* 语言切换 - SWISS STYLE */
 .language-switch {
-  margin-left: var(--spacing-md);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--black);
   display: flex;
-  gap: var(--spacing-xs);
+  gap: 8px;
   align-items: center;
 }
 
@@ -303,7 +306,7 @@ p {
   background: var(--white);
   border: 1px solid var(--black);
   border-radius: var(--border-radius);
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 4px 8px;
   cursor: pointer;
   transition: var(--transition-fast);
   font-size: 0.8rem;
