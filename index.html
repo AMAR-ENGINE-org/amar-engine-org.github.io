@@ -42,11 +42,11 @@
         <div class="container">
             <div class="hero-content">
                 <h1 data-i18n="hero.title">AMAR Engine</h1>
-                <p data-i18n="hero.subtitle">Advanced Multi-dimensional Augmented Reality Engine</p>
-                <p data-i18n="hero.description">A reality mapping and physical reconstruction system with triple-path convergence architecture</p>
+                <p data-i18n="hero.subtitle">A next-generation 3D tool for virtual worlds</p>
+                <p data-i18n="hero.description">Generates virtual worlds from both natural language descriptions and real-world captures. Serves as a decentralized operating system for virtual reality where the physical behavior of objects is governed by a unique Metaclass system.</p>
                 <div class="hero-buttons">
-                    <a href="#learn-more" class="btn primary">Learn More</a>
-                    <a href="#get-started" class="btn secondary">Get Started</a>
+                    <a href="#about" class="btn primary">Learn More</a>
+                    <a href="documentation.html" class="btn secondary">Documentation</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,15 @@
         <div class="container">
             <div class="about-content">
                 <h2 data-i18n="about.title">About AMAR Engine</h2>
-                <p data-i18n="about.description">AMAR Engine (AME) is a cutting-edge reality mapping and physical reconstruction system designed to bridge the gap between virtual and physical worlds. With its innovative triple-path convergence architecture, AME offers unprecedented capabilities for creating immersive augmented reality experiences.</p>
+                <p data-i18n="about.description">AMAR Engine (AME) is a next-generation 3D tool designed to generate virtual worlds from both natural language descriptions and real-world captures. It serves as a decentralized operating system for virtual reality where the physical behavior of objects is governed by a unique Metaclass system.</p>
+                
+                <h3 data-i18n="about.philosophy">Core Philosophy</h3>
+                <ul data-i18n="about.philosophy.list">
+                    <li><strong>Real Mesher, Not Just Models:</strong> Unlike NeRF or 3DGS, AME generates true geometric meshes. This ensures that every asset is a "solid" entity compatible with standard 3D environments.</li>
+                    <li><strong>Metaclass Logic:</strong> Properties are not inherited but composed. A Metaclass defines what an object is and what it can do (e.g., a "Container" Metaclass allows an object to hold liquid).</li>
+                    <li><strong>Decentralized Collaboration:</strong> AME is a local tool. It uses Cloud-based LLMs to guide the generation process via the Skills Library, overcoming local hardware limitations.</li>
+                    <li><strong>Global Identity (AEID):</strong> Every scene and asset is assigned a worldwide unique ID (AEID) for registration and tracking in a global database.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -66,20 +74,25 @@
     <section id="architecture" class="architecture">
         <div class="container">
             <div class="content-container">
-                <h2 data-i18n="architecture.title">Triple-Path Convergence Architecture</h2>
+                <h2 data-i18n="architecture.title">Technical Architecture</h2>
             </div>
             <div class="architecture-content">
                 <div class="architecture-item">
-                    <h3 data-i18n="architecture.path1.title">Path 1: Perception & Mapping</h3>
-                    <p data-i18n="architecture.path1.description">Real-time environmental scanning and 3D mapping capabilities that capture the physical world with precision.</p>
+                    <h3 data-i18n="architecture.asset-world.title">The Asset vs. The World</h3>
+                    <p data-i18n="architecture.asset-world.description"><strong>Assets:</strong> Individual entities (like a teacup) with specific Metaclass attributes.</p>
+                    <p data-i18n="architecture.asset-world.description2"><strong>Scenes:</strong> Entire worlds composed of multiple assets. All scenes are fully compatible and can be combined like meshes in Unreal Engine.</p>
                 </div>
                 <div class="architecture-item">
-                    <h3 data-i18n="architecture.path2.title">Path 2: Digital Twin Creation</h3>
-                    <p data-i18n="architecture.path2.description">Generates accurate digital representations of physical environments and objects.</p>
+                    <h3 data-i18n="architecture.pipeline.title">Generation Pipeline</h3>
+                    <p data-i18n="architecture.pipeline.description1"><strong>Instruction (Skills Library):</strong> A RESTful-style specification that allows an AI to guide AME on how to build a scene or asset.</p>
+                    <p data-i18n="architecture.pipeline.description2"><strong>Reconstruction:</strong> Local AME processes camera footage (photos/videos) or generative prompts to output high-quality Meshes.</p>
+                    <p data-i18n="architecture.pipeline.description3"><strong>Attribution:</strong> Metaclass schemas are injected into the Mesh to define physical interactions without traditional class inheritance.</p>
                 </div>
                 <div class="architecture-item">
-                    <h3 data-i18n="architecture.path3.title">Path 3: Augmented Reality Integration</h3>
-                    <p data-i18n="architecture.path3.description">Seamlessly integrates virtual elements into the physical world for immersive experiences.</p>
+                    <h3 data-i18n="architecture.triple-path.title">Triple-Path Convergence Architecture</h3>
+                    <p data-i18n="architecture.triple-path.description1"><strong>3DGS Path [AME Scanner]:</strong> Spatial skeleton capture with density collapse processing and OBB fitting.</p>
+                    <p data-i18n="architecture.triple-path.description2"><strong>Media Input Path [Media Loader]:</strong> Multimodal attribute sourcing from cross-spectrum images, temporal videos, and acoustic data.</p>
+                    <p data-i18n="architecture.triple-path.description3"><strong>LLM API Path [Semantic Coder]:</strong> Metaclass definition and logic assignment, converting natural language fragments into Metaclass descriptions.</p>
                 </div>
             </div>
         </div>
@@ -94,19 +107,27 @@
             <div class="features-grid">
                 <div class="feature-item">
                     <h3 data-i18n="features.metaclass.title">Metaclass System</h3>
-                    <p data-i18n="features.metaclass.description">A flexible and extensible system for defining and managing complex data structures and relationships.</p>
+                    <p data-i18n="features.metaclass.description">The genetic genes of the AME system, defining physical properties and behavioral rules for entities. Includes Root Metaclasses (physical world axioms) and Standard Metaclasses (entity templates with interaction potential).</p>
                 </div>
                 <div class="feature-item">
                     <h3 data-i18n="features.aeid.title">AEID System</h3>
-                    <p data-i18n="features.aeid.description">Advanced Entity Identification system that uniquely identifies and tracks entities across different domains.</p>
+                    <p data-i18n="features.aeid.description">AMAR Engine ID system that assigns worldwide unique identifiers to every scene and asset for registration and tracking in a global database.</p>
                 </div>
                 <div class="feature-item">
                     <h3 data-i18n="features.skills.title">Skills System</h3>
-                    <p data-i18n="features.skills.description">A modular system for adding and managing capabilities and behaviors to entities.</p>
+                    <p data-i18n="features.skills.description">The "API of the Virtual World" - a standardized way for AI to communicate construction intent to AME, focusing on the "what" and "how" of an object's properties.</p>
                 </div>
                 <div class="feature-item">
-                    <h3 data-i18n="features.real-time.title">Real-time Processing</h3>
-                    <p data-i18n="features.real-time.description">High-performance processing capabilities for real-time mapping and rendering.</p>
+                    <h3 data-i18n="features.mesher.title">Mesher System</h3>
+                    <p data-i18n="features.mesher.description">Generates true geometric meshes (not just models) ensuring every asset is a "solid" entity compatible with standard 3D environments.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 data-i18n="features.admin.title">AME Admin</h3>
+                    <p data-i18n="features.admin.description">The system's central hub (Normalization Center) that collapses data from three heterogeneous paths into a single physical entity.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 data-i18n="features.genis.title">AMAR GENIS</h3>
+                    <p data-i18n="features.genis.description">The underlying physics engine that enforces physical laws, implements real-time metaclass injection, and supports topological mutation.</p>
                 </div>
             </div>
         </div>
@@ -121,15 +142,27 @@
             <div class="components-grid">
                 <div class="component-item">
                     <h3 data-i18n="components.scanner.title">AME Scanner</h3>
-                    <p data-i18n="components.scanner.description">Spatial skeleton capture with density collapse processing and OBB fitting, providing geometric constraints for entities.</p>
+                    <p data-i18n="components.scanner.description">3DGS path executor responsible for spatial skeleton capture, density collapse processing, and OBB fitting. Provides geometric constraints for entities.</p>
                 </div>
                 <div class="component-item">
-                    <h3 data-i18n="components.engine.title">AMAR ENGINE</h3>
-                    <p data-i18n="components.engine.description">System core with Normalization Center (Admin), integrating metaclass, AEID, and skills systems.</p>
+                    <h3 data-i18n="components.media.title">Media Input Path</h3>
+                    <p data-i18n="components.media.description">Handles multimodal attribute sourcing from cross-spectrum images, temporal videos, and acoustic data. Provides perceptual consistency for entities.</p>
+                </div>
+                <div class="component-item">
+                    <h3 data-i18n="components.llm.title">LLM API Path</h3>
+                    <p data-i18n="components.llm.description">Responsible for metaclass definition and logic assignment, converting natural language fragments into Metaclass descriptions and injecting physical constants.</p>
+                </div>
+                <div class="component-item">
+                    <h3 data-i18n="components.admin.title">AME Admin</h3>
+                    <p data-i18n="components.admin.description">The central hub (Normalization Center) that collapses data from three heterogeneous paths into a single physical entity. Performs metaclass inference and parameter normalization.</p>
+                </div>
+                <div class="component-item">
+                    <h3 data-i18n="components.world.title">AMAR WORLD</h3>
+                    <p data-i18n="components.world.description">The persistent structured output of the system, a directory-based world format that is metaclass-resolved, parameter-normalized, and dependency-explicit.</p>
                 </div>
                 <div class="component-item">
                     <h3 data-i18n="components.genis.title">AMAR GENIS</h3>
-                    <p data-i18n="components.genis.description">Physics engine and executor of physical laws, implementing physical instantiation and behavior simulation.</p>
+                    <p data-i18n="components.genis.description">The underlying physics engine that enforces physical laws, implements real-time metaclass injection, and supports topological mutation.</p>
                 </div>
             </div>
         </div>
@@ -144,19 +177,27 @@
             <div class="innovations-content">
                 <div class="innovation-item">
                     <h3 data-i18n="innovations.triple-path.title">Triple-Path Convergence Architecture</h3>
-                    <p data-i18n="innovations.triple-path.description">Collapses data from three heterogeneous paths (3DGS, Media Input, LLM API) into a single physical entity.</p>
+                    <p data-i18n="innovations.triple-path.description">Collapses data from three heterogeneous paths (3DGS, Media Input, LLM API) into a single physical entity through the Admin normalization center.</p>
                 </div>
                 <div class="innovation-item">
-                    <h3 data-i18n="innovations.metaclass.title">Metaclass System</h3>
-                    <p data-i18n="innovations.metaclass.description">Genetic genes of the system, with evolutionary logic from concrete to abstract to self-consistent.</p>
+                    <h3 data-i18n="innovations.metaclass.title">Metaclass Protocol</h3>
+                    <p data-i18n="innovations.metaclass.description">Evolutionary logic from concrete to abstract to self-consistent, with Root Metaclasses as physical world axioms and Standard Metaclasses as entity templates.</p>
                 </div>
                 <div class="innovation-item">
                     <h3 data-i18n="innovations.physical-handle.title">Physical Handle Binding</h3>
-                    <p data-i18n="innovations.physical-handle.description">Implements asynchronous coupling between the 3DGS visual layer and physical collision layer.</p>
+                    <p data-i18n="innovations.physical-handle.description">Implements asynchronous coupling between the 3DGS visual layer and physical collision layer for seamless interaction.</p>
                 </div>
                 <div class="innovation-item">
                     <h3 data-i18n="innovations.real-time-injection.title">Real-time Metaclass Injection</h3>
-                    <p data-i18n="innovations.real-time-injection.description">Enables real-time changes to an object's physical constants without restarting the simulation.</p>
+                    <p data-i18n="innovations.real-time-injection.description">Enables real-time changes to an object's physical constants without restarting the simulation, allowing for dynamic behavior adjustments.</p>
+                </div>
+                <div class="innovation-item">
+                    <h3 data-i18n="innovations.topological-mutation.title">Topological Mutation Support</h3>
+                    <p data-i18n="innovations.topological-mutation.description">Real-time collision body reconstruction algorithm designed for 3DGS dynamic flows, enabling fluid and dynamic object interactions.</p>
+                </div>
+                <div class="innovation-item">
+                    <h3 data-i18n="innovations.skills.title">Skills Specification</h3>
+                    <p data-i18n="innovations.skills.description">The "API of the Virtual World" - a RESTful-style specification that allows AI to guide AME on how to build scenes and assets.</p>
                 </div>
             </div>
         </div>
