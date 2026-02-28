@@ -778,12 +778,22 @@ p {
   color: var(--dark-gray);
 }
 
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: var(--spacing-md);
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: block;
   }
   
-  .navbar-links {
+  .nav-links {
     position: fixed;
     top: 70px;
     left: 0;
@@ -799,29 +809,60 @@ p {
     pointer-events: none;
   }
   
-  .navbar-links.active {
+  .nav-links.active {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
   }
   
-  .lang-switcher {
-    position: fixed;
-    top: 80px;
-    right: var(--spacing-md);
-    background: var(--white);
-    padding: var(--spacing-sm);
-    border-radius: var(--border-radius-sm);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: var(--transition-normal);
-    pointer-events: none;
+  .language-switch {
+    margin-left: 0;
+    margin-top: var(--spacing-md);
   }
   
-  .lang-switcher.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: all;
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Sections */
+  .about, .architecture, .features, .components, .innovations, .scenarios, .docs {
+    padding: 4rem 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  /* Grid layouts */
+  .architecture-content,
+  .features-grid,
+  .components-grid,
+  .innovations-content,
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-links {
+    align-items: center;
+  }
+  
+  .footer-social {
+    align-items: center;
   }
 }
