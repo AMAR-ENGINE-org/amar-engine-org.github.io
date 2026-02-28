@@ -915,24 +915,60 @@ p {
   .nav-links a {
     font-size: 0.8rem;
   }
+  
+  /* Hero Section */
+  .hero-content {
+    grid-column: 2 / 12;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  /* Content containers */
+  .about-content,
+  .docs-content {
+    grid-column: 2 / 12;
+  }
+  
+  .architecture-content,
+  .features-grid,
+  .components-grid,
+  .innovations-content,
+  .scenarios-grid,
+  .team-grid {
+    grid-column: 2 / 12;
+  }
+  
+  /* Footer */
+  .footer-content,
+  .footer-bottom {
+    grid-column: 2 / 12;
+  }
 }
 
 @media (max-width: 768px) {
+  /* Mobile Menu Button */
   .mobile-menu-btn {
     display: block;
+    bottom: 16px;
+    left: 16px;
+    padding: 8px;
   }
   
+  .mobile-menu-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Navigation Links */
   .nav-links {
     position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: var(--white);
-    flex-direction: column;
-    align-items: center;
-    padding: var(--spacing-lg) 0;
-    border-bottom: 2px solid var(--black);
-    transform: translateY(-100%);
+    bottom: 60px;
+    left: 16px;
+    right: auto;
+    max-width: 260px;
+    transform: translateX(-150%);
     opacity: 0;
     transition: var(--transition-normal);
     pointer-events: none;
@@ -940,65 +976,121 @@ p {
   }
   
   .nav-links.active {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     pointer-events: all;
   }
   
   .nav-links a {
-    margin: var(--spacing-xs) 0;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
   }
   
   .language-switch {
     margin-left: 0;
-    margin-top: var(--spacing-md);
+    margin-top: 12px;
   }
   
   /* Hero Section */
+  .hero-content {
+    grid-column: 1 / 13;
+  }
+  
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .hero-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
   }
   
   /* Sections */
   .about, .architecture, .features, .components, .innovations, .scenarios, .docs, .team {
-    padding: 4rem 0;
+    padding: 3rem 0;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
   }
   
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
-  /* Grid layouts */
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Content containers */
+  .about-content,
+  .docs-content {
+    grid-column: 1 / 13;
+  }
+  
   .architecture-content,
   .features-grid,
   .components-grid,
   .innovations-content,
   .scenarios-grid,
-  .team-grid,
+  .team-grid {
+    grid-column: 1 / 13;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Documentation */
   .docs-grid {
     grid-template-columns: 1fr;
   }
   
   /* Footer */
+  .footer-content,
+  .footer-bottom {
+    grid-column: 1 / 13;
+  }
+  
   .footer-content {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
   }
   
   .footer-links {
-    align-items: center;
+    align-items: flex-start;
   }
   
   .footer-social {
-    align-items: center;
+    align-items: flex-start;
+  }
+  
+  /* Code blocks */
+  pre {
+    font-size: 0.8rem;
+    overflow-x: auto;
+    padding: var(--spacing-sm);
+  }
+  
+  /* Lists */
+  ul, ol {
+    padding-left: var(--spacing-md);
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.85rem;
+  }
+  
+  /* Container padding */
+  .container {
+    padding: 0 var(--spacing-sm);
   }
 }

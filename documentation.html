@@ -3,56 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AMAR Engine Documentation">
-    <meta name="keywords" content="AMAR Engine, documentation, technical guide">
+    <meta name="description" content="AMAR Engine Documentation - Comprehensive guide to the next-generation 3D tool for virtual worlds, including architecture, core concepts, metaclass system, AEID, skills system, and API reference.">
+    <meta name="keywords" content="AMAR Engine, documentation, technical guide, architecture, core concepts, metaclass system, AEID, skills system, API reference, developer guide">
     <meta name="author" content="AMAR Engine Team">
     <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AMAR Engine Documentation">
+    <meta property="og:description" content="Comprehensive guide to AMAR Engine architecture, core concepts, and API">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amar-engine-org.github.io/documentation.html">
+    <meta property="og:image" content="https://amar-engine-org.github.io/assets/images/amar-engine-docs-og.png">
+    <meta property="og:site_name" content="AMAR Engine">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AMAR Engine Documentation">
+    <meta name="twitter:description" content="Comprehensive guide to AMAR Engine architecture, core concepts, and API">
+    <meta name="twitter:image" content="https://amar-engine-org.github.io/assets/images/amar-engine-docs-twitter.png">
+    <meta name="twitter:site" content="@amarengine">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://amar-engine-org.github.io/documentation.html">
     <title>AMAR Engine - Documentation</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="data:,">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>AMAR Engine</h1>
-            </div>
-            <button class="mobile-menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <span class="nav-space"></span>
-                <a href="#overview">Overview</a>
-                <span class="nav-space"></span>
-                <a href="#architecture">Architecture</a>
-                <span class="nav-space"></span>
-                <a href="#core-concepts">Core Concepts</a>
-                <span class="nav-space"></span>
-                <a href="#components">Components</a>
-                <span class="nav-space"></span>
-                <a href="#metaclass">Metaclass</a>
-                <span class="nav-space"></span>
-                <a href="#aeid">AEID</a>
-                <span class="nav-space"></span>
-                <a href="#skills">Skills</a>
-                <span class="nav-space"></span>
-                <a href="#api">API</a>
-                <span class="nav-space"></span>
-                <a href="#developer">Developer</a>
-                <span class="nav-space"></span>
-                <div class="language-switch">
-                    <button id="lang-en" class="lang-btn active">EN</button>
-                    <button id="lang-zh" class="lang-btn">中文</button>
-                </div>
-            </div>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#core-concepts">Core Concepts</a>
+        <a href="#components">Components</a>
+        <a href="#metaclass">Metaclass</a>
+        <a href="#aeid">AEID</a>
+        <a href="#skills">Skills</a>
+        <a href="#api">API</a>
+        <a href="#developer">Developer</a>
+        <div class="language-switch">
+            <button id="lang-en" class="lang-btn active">EN</button>
+            <button id="lang-zh" class="lang-btn">中文</button>
         </div>
-    </nav>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -585,11 +591,72 @@ class AEIDGenerator {
             <div class="content-container">
                 <h2>Skills System</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>Skills Specification</h3>
-                    <p>Skills system specification and implementation</p>
-                </div>
+            <div class="about-content">
+                <h3>Skills Specification</h3>
+                <p>Skills are the "API of the Virtual World." Instead of rigid code, they provide a standardized way for AI to communicate construction intent to AME.</p>
+                
+                <h4>Key Principles</h4>
+                <ul>
+                    <li><strong>Standardization:</strong> Allows AI to understand how to describe virtual world scenes</li>
+                    <li><strong>Stateless:</strong> Focuses on the "what" and "how" of an object's properties rather than temporal data</li>
+                    <li><strong>Extensible:</strong> Can be easily extended to support new types of interactions</li>
+                    <li><strong>Composable:</strong> Multiple skills can be combined to create complex behaviors</li>
+                </ul>
+                
+                <h4>Skill Definition</h4>
+                <p>A skill is defined with the following components:</p>
+                <ul>
+                    <li><strong>Name:</strong> Unique identifier of the skill</li>
+                    <li><strong>Description:</strong> Functional description of the skill</li>
+                    <li><strong>Parameters:</strong> Parameters required for skill execution</li>
+                    <li><strong>Return value:</strong> Return value of skill execution</li>
+                    <li><strong>Dependencies:</strong> Other skills required for skill execution</li>
+                </ul>
+                
+                <h4>Skill Classification</h4>
+                <h5>Basic Skills</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Basic operations and behaviors</li>
+                    <li><strong>Examples:</strong> Move, rotate, scale</li>
+                    <li><strong>Characteristics:</strong> Do not depend on other skills</li>
+                </ul>
+                
+                <h5>Composite Skills</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Complex operations composed of multiple basic skills</li>
+                    <li><strong>Examples:</strong> Grab, throw, open</li>
+                    <li><strong>Characteristics:</strong> Depend on other skills</li>
+                </ul>
+                
+                <h4>Skill Execution</h4>
+                <p>Example of skill execution:</p>
+                
+                <pre>
+class SkillExecutor {
+  execute(skillName: string, entityId: string, params: any): any {
+    // 获取 Skill 定义
+    const skill = this.skillRegistry.get(skillName);
+    
+    // 验证参数
+    if (!this.skillValidator.validate(skill, params)) {
+      throw new Error('Invalid parameters for skill');
+    }
+    
+    // 执行 Skill
+    const result = skill.execute(entityId, params);
+    
+    // 返回执行结果
+    return result;
+  }
+}
+                </pre>
+                
+                <h4>Skill Management</h4>
+                <ul>
+                    <li><strong>Registry:</strong> Maintain a registry of all skills</li>
+                    <li><strong>Validation:</strong> Validate skills and their parameters</li>
+                    <li><strong>Composition:</strong> Combine multiple skills to form composite skills</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -599,12 +666,102 @@ class AEIDGenerator {
         <div class="container">
             <div class="about-content">
                 <h2>API Reference</h2>
-                <div class="docs-grid">
-                    <div class="docs-item">
-                        <h3>API Reference (English)</h3>
-                        <p>Application Programming Interface documentation</p>
-                    </div>
-                </div>
+                <p>AMAR Engine provides a command line interface (CLI) tool called `ame` for interacting with the engine.</p>
+                
+                <h3>Installation</h3>
+                <pre>
+# Install dependencies
+npm install
+
+# Link the CLI tool (optional)
+npm link
+                </pre>
+                
+                <h3>Basic Usage</h3>
+                <pre>
+# Initialize AMAR Engine
+ame init
+
+# Check engine status
+ame status
+
+# Generate a new AEID
+ame aeid generate --type asset
+
+# List all registered metaclasses
+ame metaclass list
+
+# Register a new skill
+ame skill register
+                </pre>
+                
+                <h3>Available Commands</h3>
+                
+                <h4>System Commands</h4>
+                <ul>
+                    <li><code>ame init</code>: Initialize AMAR Engine</li>
+                    <li><code>ame status</code>: Check AMAR Engine status</li>
+                </ul>
+                
+                <h4>Metaclass Commands</h4>
+                <ul>
+                    <li><code>ame metaclass register</code>: Register a new metaclass</li>
+                    <li><code>ame metaclass list</code>: List all registered metaclasses</li>
+                    <li><code>ame metaclass compose</code>: Compose multiple metaclasses</li>
+                </ul>
+                
+                <h4>AEID Commands</h4>
+                <ul>
+                    <li><code>ame aeid generate</code>: Generate a new AEID</li>
+                    <li><code>ame aeid validate &lt;aeid&gt;</code>: Validate an AEID</li>
+                    <li><code>ame aeid register &lt;aeid&gt;</code>: Register an AEID</li>
+                    <li><code>ame aeid query &lt;aeid&gt;</code>: Query an AEID</li>
+                </ul>
+                
+                <h4>Skill Commands</h4>
+                <ul>
+                    <li><code>ame skill register</code>: Register a new skill</li>
+                    <li><code>ame skill execute &lt;skillId&gt;</code>: Execute a skill</li>
+                    <li><code>ame skill list</code>: List all registered skills</li>
+                </ul>
+                
+                <h3>Examples</h3>
+                
+                <h4>Generate and Register an AEID</h4>
+                <pre>
+# Generate a new AEID for an asset
+ame aeid generate --type asset
+
+# Validate an AEID
+ame aeid validate AST-202602070753-25224137-1EF6
+
+# Register an AEID
+ame aeid register AST-202602070753-25224137-1EF6
+                </pre>
+                
+                <h4>Register and Execute a Skill</h4>
+                <pre>
+# Register a new skill
+ame skill register
+
+# Execute a skill
+ame skill execute create_asset
+
+# List all skills
+ame skill list
+                </pre>
+                
+                <h4>Manage Metaclasses</h4>
+                <pre>
+# Register a new metaclass
+ame metaclass register
+
+# List all metaclasses
+ame metaclass list
+
+# Compose multiple metaclasses
+ame metaclass compose
+                </pre>
             </div>
         </div>
     </section>
@@ -615,23 +772,67 @@ class AEIDGenerator {
             <div class="content-container">
                 <h2>Developer Guide</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>Developer Guide</h3>
-                    <p>Guide for developers working with AMAR Engine</p>
-                </div>
-                <div class="docs-item">
-                    <h3>Developer Guide (English)</h3>
-                    <p>Developer guide in English</p>
-                </div>
-                <div class="docs-item">
-                    <h3>Design System</h3>
-                    <p>Design system guidelines</p>
-                </div>
-                <div class="docs-item">
-                    <h3>Tahoe</h3>
-                    <p>Additional system documentation</p>
-                </div>
+            <div class="about-content">
+                <h3>Getting Started</h3>
+                <p>This guide provides instructions for developers working with AMAR Engine.</p>
+                
+                <h3>Installation</h3>
+                <pre>
+# Clone the repository
+git clone https://github.com/Oasis-Company/AMAR-Engine.git
+
+# Navigate to the project directory
+cd AMAR-Engine
+
+# Install dependencies
+npm install
+
+# Link the CLI tool (optional)
+npm link
+                </pre>
+                
+                <h3>Project Structure</h3>
+                <pre>
+AMAR-Engine/
+├── src/              # Source code
+├── docs/             # Documentation
+├── examples/         # Example projects
+├── packages/         # NPM packages
+├── scripts/          # Utility scripts
+├── test/             # Test files
+├── package.json      # Project configuration
+└── README.md         # Project README
+                </pre>
+                
+                <h3>Development Workflow</h3>
+                <ol>
+                    <li><strong>Setup:</strong> Clone the repository and install dependencies</li>
+                    <li><strong>Development:</strong> Make changes to the source code</li>
+                    <li><strong>Testing:</strong> Run tests to ensure functionality</li>
+                    <li><strong>Documentation:</strong> Update documentation as needed</li>
+                    <li><strong>Contribution:</strong> Submit pull requests with your changes</li>
+                </ol>
+                
+                <h3>Design System</h3>
+                <p>The AMAR Engine design system provides guidelines for creating consistent and cohesive user interfaces.</p>
+                
+                <h4>Key Principles</h4>
+                <ul>
+                    <li><strong>Consistency:</strong> Maintain consistent design patterns across the system</li>
+                    <li><strong>Clarity:</strong> Ensure interfaces are clear and easy to understand</li>
+                    <li><strong>Flexibility:</strong> Design components that can adapt to different contexts</li>
+                    <li><strong>Accessibility:</strong> Ensure all users can access and use the system</li>
+                </ul>
+                
+                <h3>Tahoe</h3>
+                <p>Tahoe is a structured model pipeline that integrates with AMAR Engine. It provides additional capabilities for generating and processing 3D models.</p>
+                
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Advanced model generation</li>
+                    <li>Model optimization</li>
+                    <li>Integration with AME's metaclass system</li>
+                </ul>
             </div>
         </div>
     </section>
