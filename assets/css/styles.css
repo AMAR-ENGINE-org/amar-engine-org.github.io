@@ -868,6 +868,19 @@ p {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social a svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--white);
+}
+
+.footer-social a:hover svg {
+  stroke: var(--primary-blue);
 }
 
 .footer-social a:hover {
