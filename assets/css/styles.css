@@ -680,6 +680,72 @@ p {
   flex-wrap: wrap;
 }
 
+/* Team Section - SWISS STYLE */
+.team {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--light-gray);
+  border-bottom: 2px solid var(--black);
+}
+
+.team .container {
+  align-items: start;
+}
+
+.team-grid {
+  grid-column: 3 / 11;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.team-item {
+  background-color: var(--white);
+  padding: var(--spacing-md);
+  border: 1px solid var(--black);
+  transition: var(--transition-fast);
+}
+
+.team-item:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.team-item h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.team-item:hover h3 {
+  color: var(--white);
+}
+
+.team-item p {
+  color: var(--dark-gray);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.team-item:hover p {
+  color: var(--white);
+}
+
+.team-item a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.team-item a:hover {
+  text-decoration: underline;
+}
+
+.team-item:hover a {
+  color: var(--primary-green);
+}
+
 /* Footer Section - SWISS STYLE */
 .footer {
   background: var(--black);

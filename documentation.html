@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMAR Engine Documentation">
+    <meta name="keywords" content="AMAR Engine, documentation, technical guide">
+    <meta name="author" content="AMAR Engine Team">
+    <meta name="robots" content="index, follow">
+    <title>AMAR Engine - Documentation</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>AMAR Engine</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#overview">Overview</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#core-concepts">Core Concepts</a>
+                <a href="#api-reference">API Reference</a>
+                <a href="#developer-guide">Developer Guide</a>
+                <div class="language-switch">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-zh" class="lang-btn">中文</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Documentation</h1>
+                <p>Comprehensive guide to AMAR Engine</p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn primary">Get Started</a>
+                    <a href="index.html" class="btn secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Overview</h2>
+                <p>AMAR Engine (AME) is a reality mapping and physical reconstruction system, not a traditional 3D rendering engine. It "forcefully" instantiates entities with physical authority in the digital dimension through resampling of high-dimensional spatial point clouds and integration of multimodal semantic injection.</p>
+                <h3>Core Mission</h3>
+                <p>PHYSICAL INSTANTIATION OF REALITY</p>
+                <h3>System Vision</h3>
+                <p>In AME's worldview, everything can be Instantiated, and physical laws are absolutely governed by the underlying engine AMAR GENIS. The AME system aims to create a digital ecosystem that can truly reflect and simulate the real world, where each entity has physical properties and behaviors highly consistent with the real world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <div class="content-container">
+                <h2>System Components</h2>
+            </div>
+            <div class="components-grid">
+                <div class="component-item">
+                    <h3>AME Scanner</h3>
+                    <p>Spatial skeleton capture with density collapse processing and OBB fitting, providing geometric constraints for entities. It serves as the executor of the 3DGS path.</p>
+                </div>
+                <div class="component-item">
+                    <h3>AMAR ENGINE</h3>
+                    <p>System core with Normalization Center (Admin), integrating metaclass, AEID, and skills systems. It acts as the system hub, collapsing data from three paths into a unique physical entity.</p>
+                </div>
+                <div class="component-item">
+                    <h3>AMAR GENIS</h3>
+                    <p>Physics engine and executor of physical laws, implementing physical instantiation and behavior simulation. It serves as the underlying physics engine and physical judge of the AME world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="content-container">
+                <h2>Architecture</h2>
+            </div>
+            <div class="architecture-content">
+                <div class="architecture-item">
+                    <h3>Triple-Path Convergence</h3>
+                    <p>The AME system adopts a triple-path convergence architecture, with Admin as the hub, collapsing data from three heterogeneous paths into a single physical entity: 3DGS Path, Media Input Path, and LLM API Path.</p>
+                </div>
+                <div class="architecture-item">
+                    <h3>3DGS Path</h3>
+                    <p>Navigates 3D Gaussian splatting through density-weighted sampling algorithms to extract spatial truth, providing geometric constraints for entities.</p>
+                </div>
+                <div class="architecture-item">
+                    <h3>Media Input Path</h3>
+                    <p>Processes cross-spectrum images, temporal videos, and acoustic data to determine object surface material flow and acoustic impedance, providing sensory consistency for entities.</p>
+                </div>
+                <div class="architecture-item">
+                    <h3>LLM API Path</h3>
+                    <p>Converts natural language fragments into metaclass descriptions, injecting physical constants, and providing causality for entities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Concepts Section -->
+    <section id="core-concepts" class="features">
+        <div class="container">
+            <div class="content-container">
+                <h2>Core Concepts</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Metaclass System</h3>
+                    <p>Genetic genes of the system, with evolutionary logic from concrete to abstract to self-consistent. Includes Root Metaclass (axioms of the physical world) and Standard Metaclass (entity templates with interaction potential).</p>
+                </div>
+                <div class="feature-item">
+                    <h3>AEID System</h3>
+                    <p>Advanced Entity Identification system that uniquely identifies and tracks entities across different domains, ensuring consistent identification throughout the system.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Skills System</h3>
+                    <p>A modular system for adding and managing capabilities and behaviors to entities, allowing for flexible extension of entity functionality.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Physical Handle Binding</h3>
+                    <p>Implements asynchronous coupling between the 3DGS visual layer and physical collision layer, supporting topological mutations and ensuring consistency between visual presentation and physical behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Reference Section -->
+    <section id="api-reference" class="innovations">
+        <div class="container">
+            <div class="content-container">
+                <h2>API Reference</h2>
+            </div>
+            <div class="innovations-content">
+                <div class="innovation-item">
+                    <h3>Entities API</h3>
+                    <p><strong>POST /api/entities</strong>: Create entity with GSOutput + MediaData + SemanticData<br>
+                    <strong>GET /api/entities/{id}</strong>: Get entity information<br>
+                    <strong>PUT /api/entities/{id}</strong>: Update entity properties</p>
+                </div>
+                <div class="innovation-item">
+                    <h3>Metaclasses API</h3>
+                    <p><strong>GET /api/metaclasses</strong>: Get metaclass list<br>
+                    <strong>POST /api/metaclasses</strong>: Create new metaclass</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Guide Section -->
+    <section id="developer-guide" class="scenarios">
+        <div class="container">
+            <div class="content-container">
+                <h2>Developer Guide</h2>
+            </div>
+            <div class="scenarios-grid">
+                <div class="scenario-item">
+                    <h3>Getting Started</h3>
+                    <p>Learn how to set up and start using AMAR Engine, including installation, configuration, and basic usage.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3>Metaclass Development</h3>
+                    <p>Guide to creating and extending metaclasses, including best practices and examples.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3>Skills Implementation</h3>
+                    <p>Instructions for implementing custom skills and behaviors for entities.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3>Integration Guide</h3>
+                    <p>How to integrate AMAR Engine with other systems and platforms.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3>Performance Optimization</h3>
+                    <p>Tips and techniques for optimizing AMAR Engine performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>AMAR Engine</h2>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="#overview">Overview</a>
+                    <a href="#architecture">Architecture</a>
+                    <a href="#core-concepts">Core Concepts</a>
+                    <a href="#api-reference">API Reference</a>
+                    <a href="#developer-guide">Developer Guide</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMAR Engine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
