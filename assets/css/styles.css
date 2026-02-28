@@ -334,33 +334,7 @@ p {
   flex-wrap: wrap;
 }
 
-/* 部分样式 */
-.section {
-  padding: var(--spacing-2xl) 0;
-}
 
-.section-title {
-  text-align: center;
-  margin-bottom: var(--spacing-2xl);
-}
-
-.section-title h2 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: var(--spacing-sm);
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: var(--gradient-primary);
-  border-radius: 2px;
-}
 
 /* About Section */
 .about {
@@ -703,33 +677,7 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* 部分样式 */
-.section {
-  padding: var(--spacing-2xl) 0;
-}
 
-.section-title {
-  text-align: center;
-  margin-bottom: var(--spacing-2xl);
-}
-
-.section-title h2 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: var(--spacing-sm);
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: var(--gradient-primary);
-  border-radius: 2px;
-}
 
 /* 组件卡片样式 */
 .component-card {
