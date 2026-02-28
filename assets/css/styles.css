@@ -244,40 +244,42 @@ p {
   padding: var(--spacing-md) 0;
 }
 
-.navbar-container {
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-logo {
+.logo h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  text-decoration: none;
   color: var(--dark-gray);
+  margin: 0;
 }
 
-.navbar-links {
+.nav-links {
   display: flex;
   gap: var(--spacing-lg);
+  align-items: center;
 }
 
-.navbar-link {
+.nav-links a {
   text-decoration: none;
   color: var(--dark-gray);
   font-weight: 500;
   transition: var(--transition-fast);
 }
 
-.navbar-link:hover {
+.nav-links a:hover {
   color: var(--primary-blue);
 }
 
 /* 语言切换 */
-.lang-switcher {
+.language-switch {
   display: flex;
   gap: var(--spacing-xs);
   align-items: center;
+  margin-left: var(--spacing-lg);
 }
 
 .lang-btn {

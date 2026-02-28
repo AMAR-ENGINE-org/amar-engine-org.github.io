@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "AMAR Engine",
+    "subtitle": "Advanced Multi-dimensional Augmented Reality Engine",
+    "description": "A reality mapping and physical reconstruction system with triple-path convergence architecture"
+  },
+  "about": {
+    "title": "About AMAR Engine",
+    "description": "AMAR Engine (AME) is a cutting-edge reality mapping and physical reconstruction system designed to bridge the gap between virtual and physical worlds. With its innovative triple-path convergence architecture, AME offers unprecedented capabilities for creating immersive augmented reality experiences."
+  },
+  "architecture": {
+    "title": "Triple-Path Convergence Architecture",
+    "path1": {
+      "title": "Path 1: Perception & Mapping",
+      "description": "Real-time environmental scanning and 3D mapping capabilities that capture the physical world with precision."
+    },
+    "path2": {
+      "title": "Path 2: Digital Twin Creation",
+      "description": "Generates accurate digital representations of physical environments and objects."
+    },
+    "path3": {
+      "title": "Path 3: Augmented Reality Integration",
+      "description": "Seamlessly integrates virtual elements into the physical world for immersive experiences."
+    }
+  },
+  "features": {
+    "title": "Key Features",
+    "metaclass": {
+      "title": "Metaclass System",
+      "description": "A flexible and extensible system for defining and managing complex data structures and relationships."
+    },
+    "aeid": {
+      "title": "AEID System",
+      "description": "Advanced Entity Identification system that uniquely identifies and tracks entities across different domains."
+    },
+    "skills": {
+      "title": "Skills System",
+      "description": "A modular system for adding and managing capabilities and behaviors to entities."
+    },
+    "real-time": {
+      "title": "Real-time Processing",
+      "description": "High-performance processing capabilities for real-time mapping and rendering."
+    }
+  },
+  "docs": {
+    "title": "Documentation",
+    "description": "Explore our comprehensive documentation to learn how to use and extend AMAR Engine."
+  },
+  "components": {
+    "title": "System Components",
+    "scanner": {
+      "title": "AME Scanner",
+      "description": "Spatial skeleton capture with density collapse processing and OBB fitting, providing geometric constraints for entities."
+    },
+    "engine": {
+      "title": "AMAR ENGINE",
+      "description": "System core with Normalization Center (Admin), integrating metaclass, AEID, and skills systems."
+    },
+    "genis": {
+      "title": "AMAR GENIS",
+      "description": "Physics engine and executor of physical laws, implementing physical instantiation and behavior simulation."
+    }
+  },
+  "innovations": {
+    "title": "Technical Innovations",
+    "triple-path": {
+      "title": "Triple-Path Convergence Architecture",
+      "description": "Collapses data from three heterogeneous paths (3DGS, Media Input, LLM API) into a single physical entity."
+    },
+    "metaclass": {
+      "title": "Metaclass System",
+      "description": "Genetic genes of the system, with evolutionary logic from concrete to abstract to self-consistent."
+    },
+    "physical-handle": {
+      "title": "Physical Handle Binding",
+      "description": "Implements asynchronous coupling between the 3DGS visual layer and physical collision layer."
+    },
+    "real-time-injection": {
+      "title": "Real-time Metaclass Injection",
+      "description": "Enables real-time changes to an object's physical constants without restarting the simulation."
+    }
+  },
+  "scenarios": {
+    "title": "Application Scenarios",
+    "digital-twin": {
+      "title": "Digital Twin",
+      "description": "Create digital twins of the real world with physical authority, enabling real physical interactions."
+    },
+    "virtual-reality": {
+      "title": "Virtual Reality",
+      "description": "Build VR environments with real physical interactions, providing immersive experiences."
+    },
+    "game-development": {
+      "title": "Game Development",
+      "description": "Provide more realistic physics simulation and object interactions, enhancing the realism of games."
+    },
+    "robotics": {
+      "title": "Robotics Simulation",
+      "description": "Provide realistic physical environment simulation for robots, accelerating robot development and testing."
+    },
+    "education": {
+      "title": "Education and Training",
+      "description": "Create interactive physical experiment environments, providing intuitive learning experiences."
+    }
+  }
+}

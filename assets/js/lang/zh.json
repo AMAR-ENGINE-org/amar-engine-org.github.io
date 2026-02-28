@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "AMAR 引擎",
+    "subtitle": "高级多维增强现实引擎",
+    "description": "具有三路径融合架构的现实映射和物理重建系统"
+  },
+  "about": {
+    "title": "关于 AMAR 引擎",
+    "description": "AMAR 引擎（AME）是一个尖端的现实映射和物理重建系统，旨在弥合虚拟世界和物理世界之间的差距。凭借其创新的三路径融合架构，AME 为创建沉浸式增强现实体验提供了前所未有的能力。"
+  },
+  "architecture": {
+    "title": "三路径融合架构",
+    "path1": {
+      "title": "路径 1：感知与映射",
+      "description": "实时环境扫描和 3D 映射功能，精确捕捉物理世界。"
+    },
+    "path2": {
+      "title": "路径 2：数字孪生创建",
+      "description": "生成物理环境和对象的精确数字表示。"
+    },
+    "path3": {
+      "title": "路径 3：增强现实集成",
+      "description": "将虚拟元素无缝集成到物理世界中，实现沉浸式体验。"
+    }
+  },
+  "features": {
+    "title": "关键特性",
+    "metaclass": {
+      "title": "元类系统",
+      "description": "一个灵活可扩展的系统，用于定义和管理复杂的数据结构和关系。"
+    },
+    "aeid": {
+      "title": "AEID 系统",
+      "description": "先进的实体识别系统，可在不同领域唯一识别和跟踪实体。"
+    },
+    "skills": {
+      "title": "技能系统",
+      "description": "一个模块化系统，用于为实体添加和管理能力与行为。"
+    },
+    "real-time": {
+      "title": "实时处理",
+      "description": "用于实时映射和渲染的高性能处理能力。"
+    }
+  },
+  "docs": {
+    "title": "文档",
+    "description": "探索我们全面的文档，了解如何使用和扩展 AMAR 引擎。"
+  },
+  "components": {
+    "title": "系统组件",
+    "scanner": {
+      "title": "AME Scanner",
+      "description": "空间骨架捕获，具有密度坍缩处理和 OBB 拟合功能，为实体提供几何约束。"
+    },
+    "engine": {
+      "title": "AMAR ENGINE",
+      "description": "系统核心，包含标准化中心（Admin），集成元类、AEID 和技能系统。"
+    },
+    "genis": {
+      "title": "AMAR GENIS",
+      "description": "物理引擎和物理定律的执行者，实现实体的物理实例化和行为模拟。"
+    }
+  },
+  "innovations": {
+    "title": "技术创新",
+    "triple-path": {
+      "title": "三路径融合架构",
+      "description": "将来自三个异构路径（3DGS、媒体输入、LLM API）的数据坍缩为单个物理实体。"
+    },
+    "metaclass": {
+      "title": "元类系统",
+      "description": "系统的遗传基因，具有从具体到抽象到自洽的演化逻辑。"
+    },
+    "physical-handle": {
+      "title": "物理句柄绑定",
+      "description": "实现 3DGS 视觉层和物理碰撞层之间的异步耦合。"
+    },
+    "real-time-injection": {
+      "title": "实时元类注入",
+      "description": "无需重启模拟即可实时更改对象的物理常数。"
+    }
+  },
+  "scenarios": {
+    "title": "应用场景",
+    "digital-twin": {
+      "title": "数字孪生",
+      "description": "创建具有物理权威的现实世界数字孪生，实现真实的物理交互。"
+    },
+    "virtual-reality": {
+      "title": "虚拟现实",
+      "description": "构建具有真实物理交互的 VR 环境，提供沉浸式体验。"
+    },
+    "game-development": {
+      "title": "游戏开发",
+      "description": "提供更真实的物理模拟和对象交互，增强游戏的真实感。"
+    },
+    "robotics": {
+      "title": "机器人仿真",
+      "description": "为机器人提供逼真的物理环境仿真，加速机器人开发和测试。"
+    },
+    "education": {
+      "title": "教育与培训",
+      "description": "创建交互式物理实验环境，提供直观的学习体验。"
+    }
+  }
+}

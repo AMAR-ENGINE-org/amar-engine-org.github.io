@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAR Engine</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>AMAR Engine</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#features">Features</a>
+                <a href="#components">Components</a>
+                <a href="#innovations">Innovations</a>
+                <a href="#scenarios">Scenarios</a>
+                <a href="#docs">Documentation</a>
+                <div class="language-switch">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-zh" class="lang-btn">中文</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">AMAR Engine</h1>
+                <p data-i18n="hero.subtitle">Advanced Multi-dimensional Augmented Reality Engine</p>
+                <p data-i18n="hero.description">A reality mapping and physical reconstruction system with triple-path convergence architecture</p>
+                <div class="hero-buttons">
+                    <a href="#learn-more" class="btn primary">Learn More</a>
+                    <a href="#get-started" class="btn secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-i18n="about.title">About AMAR Engine</h2>
+            <div class="about-content">
+                <p data-i18n="about.description">AMAR Engine (AME) is a cutting-edge reality mapping and physical reconstruction system designed to bridge the gap between virtual and physical worlds. With its innovative triple-path convergence architecture, AME offers unprecedented capabilities for creating immersive augmented reality experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <h2 data-i18n="architecture.title">Triple-Path Convergence Architecture</h2>
+            <div class="architecture-content">
+                <div class="architecture-item">
+                    <h3 data-i18n="architecture.path1.title">Path 1: Perception & Mapping</h3>
+                    <p data-i18n="architecture.path1.description">Real-time environmental scanning and 3D mapping capabilities that capture the physical world with precision.</p>
+                </div>
+                <div class="architecture-item">
+                    <h3 data-i18n="architecture.path2.title">Path 2: Digital Twin Creation</h3>
+                    <p data-i18n="architecture.path2.description">Generates accurate digital representations of physical environments and objects.</p>
+                </div>
+                <div class="architecture-item">
+                    <h3 data-i18n="architecture.path3.title">Path 3: Augmented Reality Integration</h3>
+                    <p data-i18n="architecture.path3.description">Seamlessly integrates virtual elements into the physical world for immersive experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-i18n="features.title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3 data-i18n="features.metaclass.title">Metaclass System</h3>
+                    <p data-i18n="features.metaclass.description">A flexible and extensible system for defining and managing complex data structures and relationships.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 data-i18n="features.aeid.title">AEID System</h3>
+                    <p data-i18n="features.aeid.description">Advanced Entity Identification system that uniquely identifies and tracks entities across different domains.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 data-i18n="features.skills.title">Skills System</h3>
+                    <p data-i18n="features.skills.description">A modular system for adding and managing capabilities and behaviors to entities.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 data-i18n="features.real-time.title">Real-time Processing</h3>
+                    <p data-i18n="features.real-time.description">High-performance processing capabilities for real-time mapping and rendering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <h2 data-i18n="components.title">System Components</h2>
+            <div class="components-grid">
+                <div class="component-item">
+                    <h3 data-i18n="components.scanner.title">AME Scanner</h3>
+                    <p data-i18n="components.scanner.description">Spatial skeleton capture with density collapse processing and OBB fitting, providing geometric constraints for entities.</p>
+                </div>
+                <div class="component-item">
+                    <h3 data-i18n="components.engine.title">AMAR ENGINE</h3>
+                    <p data-i18n="components.engine.description">System core with Normalization Center (Admin), integrating metaclass, AEID, and skills systems.</p>
+                </div>
+                <div class="component-item">
+                    <h3 data-i18n="components.genis.title">AMAR GENIS</h3>
+                    <p data-i18n="components.genis.description">Physics engine and executor of physical laws, implementing physical instantiation and behavior simulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Innovations Section -->
+    <section id="innovations" class="innovations">
+        <div class="container">
+            <h2 data-i18n="innovations.title">Technical Innovations</h2>
+            <div class="innovations-content">
+                <div class="innovation-item">
+                    <h3 data-i18n="innovations.triple-path.title">Triple-Path Convergence Architecture</h3>
+                    <p data-i18n="innovations.triple-path.description">Collapses data from three heterogeneous paths (3DGS, Media Input, LLM API) into a single physical entity.</p>
+                </div>
+                <div class="innovation-item">
+                    <h3 data-i18n="innovations.metaclass.title">Metaclass System</h3>
+                    <p data-i18n="innovations.metaclass.description">Genetic genes of the system, with evolutionary logic from concrete to abstract to self-consistent.</p>
+                </div>
+                <div class="innovation-item">
+                    <h3 data-i18n="innovations.physical-handle.title">Physical Handle Binding</h3>
+                    <p data-i18n="innovations.physical-handle.description">Implements asynchronous coupling between the 3DGS visual layer and physical collision layer.</p>
+                </div>
+                <div class="innovation-item">
+                    <h3 data-i18n="innovations.real-time-injection.title">Real-time Metaclass Injection</h3>
+                    <p data-i18n="innovations.real-time-injection.description">Enables real-time changes to an object's physical constants without restarting the simulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Scenarios Section -->
+    <section id="scenarios" class="scenarios">
+        <div class="container">
+            <h2 data-i18n="scenarios.title">Application Scenarios</h2>
+            <div class="scenarios-grid">
+                <div class="scenario-item">
+                    <h3 data-i18n="scenarios.digital-twin.title">Digital Twin</h3>
+                    <p data-i18n="scenarios.digital-twin.description">Create digital twins of the real world with physical authority, enabling real physical interactions.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3 data-i18n="scenarios.virtual-reality.title">Virtual Reality</h3>
+                    <p data-i18n="scenarios.virtual-reality.description">Build VR environments with real physical interactions, providing immersive experiences.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3 data-i18n="scenarios.game-development.title">Game Development</h3>
+                    <p data-i18n="scenarios.game-development.description">Provide more realistic physics simulation and object interactions, enhancing the realism of games.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3 data-i18n="scenarios.robotics.title">Robotics Simulation</h3>
+                    <p data-i18n="scenarios.robotics.description">Provide realistic physical environment simulation for robots, accelerating robot development and testing.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3 data-i18n="scenarios.education.title">Education and Training</h3>
+                    <p data-i18n="scenarios.education.description">Create interactive physical experiment environments, providing intuitive learning experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="docs" class="docs">
+        <div class="container">
+            <h2 data-i18n="docs.title">Documentation</h2>
+            <p data-i18n="docs.description">Explore our comprehensive documentation to learn how to use and extend AMAR Engine.</p>
+            <div class="docs-links">
+                <a href="#" class="btn secondary">Read Documentation</a>
+                <a href="#" class="btn secondary">API Reference</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>AMAR Engine</h2>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#architecture">Architecture</a>
+                    <a href="#features">Features</a>
+                    <a href="#components">Components</a>
+                    <a href="#innovations">Innovations</a>
+                    <a href="#scenarios">Scenarios</a>
+                    <a href="#docs">Documentation</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMAR Engine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
