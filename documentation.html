@@ -73,17 +73,46 @@
         <div class="container">
             <div class="about-content">
                 <h2>Overview</h2>
-                <p>AMAR Engine (AME) is a reality mapping and physical reconstruction system, not a traditional 3D rendering engine. It "forcefully" instantiates entities with physical authority in the digital dimension through resampling of high-dimensional spatial point clouds and integration of multimodal semantic injection.</p>
-                <div class="docs-grid">
-                    <div class="docs-item">
-                        <h3>Overview</h3>
-                        <p>System overview and core mission</p>
-                    </div>
-                    <div class="docs-item">
-                        <h3>Readme</h3>
-                        <p>Getting started guide</p>
-                    </div>
-                </div>
+                <p>AMAR Engine (AME) is a next-generation 3D tool designed to generate virtual worlds from both natural language descriptions and real-world captures. It serves as a decentralized operating system for virtual reality where the physical behavior of objects is governed by a unique Metaclass system.</p>
+                
+                <h3>Core Philosophy</h3>
+                <ul>
+                    <li><strong>Real Mesher, Not Just Models:</strong> Unlike NeRF or 3DGS, AME generates true geometric meshes. This ensures that every asset is a "solid" entity compatible with standard 3D environments.</li>
+                    <li><strong>Metaclass Logic:</strong> Properties are not inherited but composed. A Metaclass defines what an object is and what it can do (e.g., a "Container" Metaclass allows an object to hold liquid).</li>
+                    <li><strong>Decentralized Collaboration:</strong> AME is a local tool. It uses Cloud-based LLMs to guide the generation process via the Skills Library, overcoming local hardware limitations.</li>
+                    <li><strong>Global Identity (AEID):</strong> Every scene and asset is assigned a worldwide unique ID (AEID) for registration and tracking in a global database.</li>
+                </ul>
+                
+                <h3>Technical Architecture</h3>
+                <h4>The Asset vs. The World</h4>
+                <ul>
+                    <li><strong>Assets:</strong> Individual entities (like a teacup) with specific Metaclass attributes.</li>
+                    <li><strong>Scenes:</strong> Entire worlds composed of multiple assets. All scenes are fully compatible and can be combined like meshes in Unreal Engine.</li>
+                </ul>
+                
+                <h4>Generation Pipeline</h4>
+                <ul>
+                    <li><strong>Instruction (Skills Library):</strong> A RESTful-style specification that allows an AI to guide AME on how to build a scene or asset.</li>
+                    <li><strong>Reconstruction:</strong> Local AME processes camera footage (photos/videos) or generative prompts to output high-quality Meshes.</li>
+                    <li><strong>Attribution:</strong> Metaclass schemas are injected into the Mesh to define physical interactions without traditional class inheritance.</li>
+                </ul>
+                
+                <h3>Roadmap</h3>
+                <ul>
+                    <li>[ ] Foundation: Define the Metaclass JSON Schema and the Skills RESTful specification.</li>
+                    <li>[ ] Local Engine: Develop the core Mesher for image-to-mesh reconstruction.</li>
+                    <li>[ ] Global Registry: Launch the AEID database website for asset indexing and sharing.</li>
+                    <li>[ ] Ecosystem: Enable seamless scene composition where separate AEIDs function as a unified Metaverse.</li>
+                </ul>
+                
+                <h3>Repositories</h3>
+                <ul>
+                    <li>Engine: Oasis-Company/AMAR-Engine</li>
+                    <li>Metaclass: Oasis-Company/metaclass-prototype</li>
+                </ul>
+                
+                <h3>License</h3>
+                <p>This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.</p>
             </div>
         </div>
     </section>
@@ -94,15 +123,94 @@
             <div class="content-container">
                 <h2>Architecture</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>Architecture</h3>
-                    <p>System architecture and design</p>
-                </div>
-                <div class="docs-item">
-                    <h3>Architecture (English)</h3>
-                    <p>System architecture in English</p>
-                </div>
+            <div class="about-content">
+                <p>AMAR Engine is a unified framework designed for multi-path world construction, structural standardization through metaclass inference, and modular physics execution.</p>
+                
+                <h3>High-Level Architecture</h3>
+                <pre>
+Input Layer
+↓
+Information Pool
+↓
+AME Admin (Metaclass Inference)
+↓
+AMAR WORLD (Persistent Standard)
+↓
+GENIS Runtime Adapter
+↓
+Genesis Physics Core
+                </pre>
+                
+                <h3>Input Layer</h3>
+                <p>The engine supports multiple world construction paths:</p>
+                <ul>
+                    <li>Scanner-based capture</li>
+                    <li>Language-based generation (LLM)</li>
+                    <li>Structured model pipelines (e.g., Tahoe)</li>
+                </ul>
+                <p>All inputs generate <strong>raw structured information</strong>, not finalized world structures.</p>
+                
+                <h3>Information Pool</h3>
+                <p>The <strong>Information Pool</strong> is a neutral structured domain that contains:</p>
+                <ul>
+                    <li>Object fragments</li>
+                    <li>Spatial hints</li>
+                    <li>Semantic signals</li>
+                    <li>Raw measurements</li>
+                </ul>
+                <p>It does not contain metaclass assignments, physics bindings, or execution semantics.</p>
+                
+                <h3>AME Admin — Structural Arbitration Layer</h3>
+                <p>AME Admin performs the critical transformation:</p>
+                <pre>
+Raw Information → Stable Structural Ontology
+                </pre>
+                <p>Responsibilities:</p>
+                <ul>
+                    <li>Internal model-driven metaclass inference</li>
+                    <li>Parameter normalization</li>
+                    <li>Structural constraint resolution</li>
+                    <li>Dependency validation</li>
+                </ul>
+                
+                <h3>AMAR WORLD Standard</h3>
+                <p><strong>AMAR WORLD</strong> is the persistent structured output of the system. It is:</p>
+                <ul>
+                    <li>A directory-based world format</li>
+                    <li>Metaclass-resolved</li>
+                    <li>Parameter-normalized</li>
+                    <li>Dependency-explicit</li>
+                    <li>Versionable and portable</li>
+                </ul>
+                <p>Example Structure:</p>
+                <pre>
+/amar_world
+  /objects
+  /environment
+  /dependencies
+  world.meta.json
+                </pre>
+                
+                <h3>Runtime Execution Layer</h3>
+                <p>Execution is modular and backend-replaceable:</p>
+                <pre>
+AMAR WORLD
+↓
+GENIS Adapter
+↓
+Genesis Physics Engine
+↓
+Interactive Simulation
+                </pre>
+                
+                <h3>Design Principles</h3>
+                <ul>
+                    <li>Structural permanence over runtime dependency</li>
+                    <li>Clear separation of inference and execution</li>
+                    <li>Engine-agnostic world specification</li>
+                    <li>Modular backend compatibility</li>
+                    <li>Extensible metaclass ontology</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -113,15 +221,125 @@
             <div class="content-container">
                 <h2>Core Concepts</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>Core Concepts</h3>
-                    <p>Fundamental concepts and principles</p>
-                </div>
-                <div class="docs-item">
-                    <h3>Core Concepts (English)</h3>
-                    <p>Fundamental concepts in English</p>
-                </div>
+            <div class="about-content">
+                <h3>1. The Metaclass Protocol</h3>
+                <p>Metaclasses are the genetic genes of the AME system, defining physical properties and behavioral rules for entities.</p>
+                
+                <h4>1.1 Metaclass Evolution Logic</h4>
+                <p><strong>Evolutionary Trend:</strong> Concrete → Abstract → Self-consistent</p>
+                <ul>
+                    <li><strong>Concrete:</strong> Extract features and rules from real-world objects</li>
+                    <li><strong>Abstract:</strong> Abstract specific features into general rules and properties</li>
+                    <li><strong>Self-consistent:</strong> Form an internally consistent, self-evolving system</li>
+                </ul>
+                
+                <h4>1.2 Metaclass Classification</h4>
+                <h5>Root Metaclass</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Axioms and basic rules of the physical world</li>
+                    <li><strong>Examples:</strong> Space, time steps, smoothness</li>
+                    <li><strong>Characteristics:</strong> Non-instantiable, only serving as underlying weights for standard metaclasses</li>
+                </ul>
+                
+                <h5>Standard Metaclass</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Entity templates with interaction potential</li>
+                    <li><strong>Examples:</strong> Container, wheel, liquid, solid</li>
+                    <li><strong>Characteristics:</strong> Possess concrete objects, inherit physical interaction interfaces</li>
+                </ul>
+                
+                <h4>1.3 Metaclass Manifestation</h4>
+                <h5>Room (Manifestation Space)</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Entity existence states in different coordinate systems</li>
+                    <li><strong>Examples:</strong> Cartesian coordinate system manifestation, relative sensory coordinate system manifestation</li>
+                </ul>
+                
+                <h3>2. AEID System (AMAR Engine ID)</h3>
+                <p>AEID system is responsible for generating and managing unique identifiers for entities in the AME system.</p>
+                
+                <h4>2.1 AEID Structure</h4>
+                <ul>
+                    <li><strong>Length:</strong> Fixed-length unique identifier</li>
+                    <li><strong>Composition:</strong> Prefix + timestamp + random number</li>
+                    <li><strong>Format:</strong> String format, ensuring global uniqueness</li>
+                </ul>
+                
+                <h3>3. Skills System</h3>
+                <p>Skills system defines the operations and behaviors that entities can perform.</p>
+                
+                <h4>3.1 Skill Definition</h4>
+                <ul>
+                    <li><strong>Name:</strong> Unique identifier of the skill</li>
+                    <li><strong>Description:</strong> Functional description of the skill</li>
+                    <li><strong>Parameters:</strong> Parameters required for skill execution</li>
+                    <li><strong>Return value:</strong> Return value of skill execution</li>
+                    <li><strong>Dependencies:</strong> Other skills required for skill execution</li>
+                </ul>
+                
+                <h4>3.2 Skill Classification</h4>
+                <h5>Basic Skills</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Basic operations and behaviors</li>
+                    <li><strong>Examples:</strong> Move, rotate, scale</li>
+                    <li><strong>Characteristics:</strong> Do not depend on other skills</li>
+                </ul>
+                
+                <h5>Composite Skills</h5>
+                <ul>
+                    <li><strong>Definition:</strong> Complex operations composed of multiple basic skills</li>
+                    <li><strong>Examples:</strong> Grab, throw, open</li>
+                    <li><strong>Characteristics:</strong> Depend on other skills</li>
+                </ul>
+                
+                <h3>4. Mesher System</h3>
+                <p>Mesher system is responsible for generating, optimizing, and validating entity meshes.</p>
+                
+                <h4>4.1 Mesh Generation</h4>
+                <ul>
+                    <li>Generate from point clouds</li>
+                    <li>Generate from parameters</li>
+                    <li>Load from files</li>
+                </ul>
+                
+                <h3>5. Admin (Normalization Center)</h3>
+                <p>Admin is the hub of the AME system, responsible for data normalization, metaclass management, and entity instantiation.</p>
+                
+                <h3>6. AMAR GENIS (Physics Engine)</h3>
+                <p>AMAR GENIS is the underlying physics engine of the AME system, responsible for physical simulation and entity behavior.</p>
+                
+                <h4>6.1 Solvers</h4>
+                <ul>
+                    <li>RigidSolver</li>
+                    <li>MPMSolver</li>
+                    <li>SPHSolver</li>
+                    <li>PBDSolver</li>
+                    <li>FEMSolver</li>
+                    <li>SFSolver</li>
+                    <li>ToolSolver</li>
+                </ul>
+                
+                <h3>7. AME Scanner</h3>
+                <p>AME Scanner is the 3DGS path executor of the AME system, responsible for spatial skeleton capture.</p>
+                
+                <h3>8. Media Input Path</h3>
+                <p>Media input path is responsible for multimodal attribute sourcing, providing perceptual consistency for entities.</p>
+                
+                <h3>9. LLM API Path</h3>
+                <p>LLM API path is responsible for metaclass definition and logic assignment, providing causality for entities.</p>
+                
+                <h3>10. Export Protocols</h3>
+                <h4>10.1 Oasis Domain (osdm)</h4>
+                <ul>
+                    <li><strong>Nature:</strong> Folder structure specification</li>
+                    <li><strong>Core Purpose:</strong> Distributed storage and distribution of interactive worlds</li>
+                </ul>
+                
+                <h4>10.2 EME World (emewd)</h4>
+                <ul>
+                    <li><strong>Nature:</strong> Binary single file</li>
+                    <li><strong>Core Purpose:</strong> Specifically for EME project (AI infant evolution project) logic training</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -132,19 +350,59 @@
             <div class="content-container">
                 <h2>System Components</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>AME Admin</h3>
-                    <p>Administration and normalization center</p>
-                </div>
-                <div class="docs-item">
-                    <h3>AME Scanner</h3>
-                    <p>Spatial skeleton capture and processing</p>
-                </div>
-                <div class="docs-item">
-                    <h3>AME Scanner Integration</h3>
-                    <p>Integration guide for AME Scanner</p>
-                </div>
+            <div class="about-content">
+                <h3>AME Scanner</h3>
+                <p>3DGS path executor responsible for spatial skeleton capture, density collapse processing, and OBB fitting. Provides geometric constraints for entities.</p>
+                
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Density collapse processing: Strip visual phantoms through non-linear threshold algorithms</li>
+                    <li>OBB (Oriented Bounding Box) fitting: Use PCA to decompose the covariance matrix of point clouds</li>
+                    <li>Spatial skeleton capture: Extract the spatial skeleton of entities</li>
+                </ul>
+                
+                <h3>Media Input Path</h3>
+                <p>Handles multimodal attribute sourcing from cross-spectrum images, temporal videos, and acoustic data. Provides perceptual consistency for entities.</p>
+                
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Image processing: Analyze images, identify materials, extract colors</li>
+                    <li>Video processing: Analyze motion, recognize behavior, perform temporal analysis</li>
+                    <li>Audio processing: Recognize acoustic features, analyze environmental audio, calculate acoustic impedance</li>
+                </ul>
+                
+                <h3>LLM API Path</h3>
+                <p>Responsible for metaclass definition and logic assignment, converting natural language fragments into Metaclass descriptions and injecting physical constants.</p>
+                
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Natural language processing: Understand semantics, recognize intent, extract entities</li>
+                    <li>Metaclass generation: Generate metaclass definitions from natural language</li>
+                    <li>Physical constant injection: Extract and optimize physical parameters</li>
+                </ul>
+                
+                <h3>AME Admin</h3>
+                <p>The central hub (Normalization Center) that collapses data from three heterogeneous paths into a single physical entity. Performs metaclass inference and parameter normalization.</p>
+                
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                    <li>Data normalization: Ensure time, space, and semantic consistency</li>
+                    <li>Metaclass management: Maintain metaclass registry, perform intelligent classification</li>
+                    <li>Entity instantiation: Make final decisions on physical entity instantiation</li>
+                </ul>
+                
+                <h3>AMAR WORLD</h3>
+                <p>The persistent structured output of the system, a directory-based world format that is metaclass-resolved, parameter-normalized, and dependency-explicit.</p>
+                
+                <h3>AMAR GENIS</h3>
+                <p>The underlying physics engine that enforces physical laws, implements real-time metaclass injection, and supports topological mutation.</p>
+                
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Physical handle binding: Implement asynchronous coupling between visual and physical layers</li>
+                    <li>Real-time metaclass injection: Enable real-time changes to physical constants</li>
+                    <li>Topological mutation support: Real-time collision body reconstruction</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -155,15 +413,112 @@
             <div class="content-container">
                 <h2>Metaclass System</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>Metaclass Standard</h3>
-                    <p>Metaclass system standard specification</p>
-                </div>
-                <div class="docs-item">
-                    <h3>Metaclass Schema</h3>
-                    <p>Metaclass schema definition</p>
-                </div>
+            <div class="about-content">
+                <h3>Metaclass Standard</h3>
+                <p>Metaclasses are the genetic genes of the AME system, with the following evolutionary logic:</p>
+                
+                <h4>Evolutionary Trend</h4>
+                <p>Concrete → Abstract → Self-consistent</p>
+                
+                <h4>Root Metaclass</h4>
+                <ul>
+                    <li><strong>Definition:</strong> Axioms of the physical world (e.g., space, time steps, smoothness)</li>
+                    <li><strong>Characteristics:</strong> Non-instantiable, only serving as underlying weights for standard metaclasses</li>
+                </ul>
+                
+                <h4>Standard Metaclass</h4>
+                <ul>
+                    <li><strong>Definition:</strong> Entity templates with interaction potential (e.g., container, wheel, liquid)</li>
+                    <li><strong>Characteristics:</strong> Possess concrete objects. When the Scanner sweeps out a volume and the Admin determines it belongs to "Standard Metaclass: Container", the volume immediately inherits the container's physical interaction interface</li>
+                </ul>
+                
+                <h4>Manifestation (Room)</h4>
+                <ul>
+                    <li>Entity existence states in different coordinate systems (e.g., Cartesian Room, relative sensory Room)</li>
+                </ul>
+                
+                <h3>Metaclass Schema</h3>
+                <p>Metaclasses are defined using JSON Schema. Here's an example of a base metaclass definition:</p>
+                
+                <pre>
+{
+  "$id": "https://example.org/metaverse/schema/metaclass.base.v0.1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Metaclass Base v0.1",
+  "type": "object",
+  "required": ["meta"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["type", "version"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Metaclass identifier, e.g., 'grass', 'water'"
+        },
+        "version": {
+          "type": "string",
+          "description": "Schema version for this metaclass instance, e.g., '0.1'"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "interaction": {
+      "type": "object",
+      "properties": {
+        "affordances": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What can be done to/with this object"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
+                </pre>
+                
+                <p>Example of a specific metaclass definition (grass metaclass):</p>
+                
+                <pre>
+{
+  "$id": "https://example.org/metaverse/schema/grass.v0.1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grass Metaclass v0.1",
+  "type": "object",
+  "allOf": [
+    { "$ref": "metaclass.base.v0.1.json" }
+  ],
+  "required": ["meta", "intrinsic"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["type", "version"],
+      "properties": {
+        "type": { "const": "grass" },
+        "version": { "const": "0.1" }
+      },
+      "additionalProperties": true
+    },
+    "intrinsic": {
+      "type": "object",
+      "required": ["heightCm", "color", "density"],
+      "properties": {
+        "heightCm": { "type": "number", "minimum": 0 },
+        "color": { "type": "string" },
+        "density": { "type": "string", "enum": ["low", "medium", "high"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
+                </pre>
             </div>
         </div>
     </section>
@@ -174,11 +529,52 @@
             <div class="content-container">
                 <h2>AEID System</h2>
             </div>
-            <div class="docs-grid">
-                <div class="docs-item">
-                    <h3>AEID Convention</h3>
-                    <p>Advanced Entity Identification system convention</p>
-                </div>
+            <div class="about-content">
+                <h3>AEID Convention</h3>
+                <p>AEID (AMAR Engine ID) is a unique identifier system for entities in the AME ecosystem. It provides a worldwide unique ID for every scene and asset for registration and tracking in a global database.</p>
+                
+                <h4>AEID Structure</h4>
+                <ul>
+                    <li><strong>Length:</strong> Fixed-length unique identifier</li>
+                    <li><strong>Composition:</strong> Prefix + timestamp + random number</li>
+                    <li><strong>Format:</strong> String format, ensuring global uniqueness</li>
+                </ul>
+                
+                <h4>AEID Generation</h4>
+                <p>Example of AEID generation:</p>
+                
+                <pre>
+class AEIDGenerator {
+  generate(): string {
+    // 生成前缀
+    const prefix = 'AE';
+    
+    // 生成时间戳
+    const timestamp = Date.now().toString(36);
+    
+    // 生成随机数
+    const random = Math.random().toString(36).substring(2, 10);
+    
+    // 组合生成 AEID
+    return `${prefix}_${timestamp}_${random}`;
+  }
+}
+                </pre>
+                
+                <h4>AEID Management</h4>
+                <ul>
+                    <li><strong>Registry:</strong> Maintain a registry of all AEIDs</li>
+                    <li><strong>Validation:</strong> Validate the validity and uniqueness of AEIDs</li>
+                    <li><strong>Resolution:</strong> Resolve AEIDs to their corresponding entities</li>
+                </ul>
+                
+                <h4>AEID Application</h4>
+                <ul>
+                    <li><strong>Entity Identification:</strong> Assign unique AEIDs to each entity</li>
+                    <li><strong>System Configuration:</strong> Associate entity configurations with AEIDs</li>
+                    <li><strong>Data Storage:</strong> Use AEIDs as keys for data storage</li>
+                    <li><strong>Asset Tracking:</strong> Track assets across different systems and environments</li>
+                </ul>
             </div>
         </div>
     </section>
