@@ -277,6 +277,12 @@ p {
   text-underline-offset: 4px;
 }
 
+/* Navigation spacing */
+.nav-space {
+  width: 16px;
+  display: inline-block;
+}
+
 /* 语言切换 - SWISS STYLE */
 .language-switch {
   grid-column: 11 / 13;
