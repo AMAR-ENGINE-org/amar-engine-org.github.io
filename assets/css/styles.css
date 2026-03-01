@@ -920,6 +920,34 @@ p {
 }
 
 /* 响应式导航 */
+@media (max-width: 1200px) {
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  /* Content containers */
+  .about-content,
+  .docs-content {
+    grid-column: 2 / 12;
+  }
+  
+  .architecture-content,
+  .features-grid,
+  .components-grid,
+  .innovations-content,
+  .scenarios-grid,
+  .team-grid {
+    grid-column: 2 / 12;
+  }
+  
+  /* Footer */
+  .footer-content,
+  .footer-bottom {
+    grid-column: 2 / 12;
+  }
+}
+
 @media (max-width: 1024px) {
   .nav-links {
     gap: var(--spacing-sm);
@@ -958,6 +986,19 @@ p {
   .footer-bottom {
     grid-column: 2 / 12;
   }
+  
+  /* Grid layouts */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .innovations-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .scenarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -966,21 +1007,23 @@ p {
     display: block;
     bottom: 16px;
     left: 16px;
-    padding: 8px;
+    padding: 12px;
+    min-width: 48px;
+    min-height: 48px;
   }
   
   .mobile-menu-btn svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
   
   /* Navigation Links */
   .nav-links {
     position: fixed;
-    bottom: 60px;
+    bottom: 72px;
     left: 16px;
     right: auto;
-    max-width: 260px;
+    max-width: 280px;
     transform: translateX(-150%);
     opacity: 0;
     transition: var(--transition-normal);
@@ -995,13 +1038,14 @@ p {
   }
   
   .nav-links a {
-    margin-bottom: 12px;
-    font-size: 0.85rem;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    padding: 8px 0;
   }
   
   .language-switch {
     margin-left: 0;
-    margin-top: 12px;
+    margin-top: 16px;
   }
   
   /* Hero Section */
@@ -1025,6 +1069,10 @@ p {
   .hero-buttons .btn {
     width: 100%;
     text-align: center;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* Sections */
@@ -1098,12 +1146,82 @@ p {
   
   /* Buttons */
   .btn {
-    padding: var(--spacing-xs) var(--spacing-md);
-    font-size: 0.85rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.9rem;
+    min-height: 44px;
   }
   
   /* Container padding */
   .container {
     padding: 0 var(--spacing-sm);
+  }
+  
+  /* Touch targets */
+  a, button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  /* Sections */
+  .about, .architecture, .features, .components, .innovations, .scenarios, .docs, .team {
+    padding: 2rem 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.85rem;
+  }
+  
+  /* Container padding */
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+  
+  /* Mobile Menu Button */
+  .mobile-menu-btn {
+    bottom: 12px;
+    left: 12px;
+    padding: 10px;
+  }
+  
+  .mobile-menu-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    bottom: 64px;
+    left: 12px;
+    max-width: 240px;
+  }
+  
+  .nav-links a {
+    margin-bottom: 12px;
+    font-size: 0.85rem;
   }
 }
