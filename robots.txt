@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amar-engine-org.github.io/sitemap.xml
